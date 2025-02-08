@@ -17,6 +17,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/etc/audio_policy_configuration.xml \
     $(DEVICE_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/etc/audio_policy_configuration.xml 
 
+# APNs
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
+
 # Fingerprint
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml \
@@ -45,8 +49,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_CHARACTERISTICS := default
 
 # Rootdir
-PRODUCT_PACKAGES += \
-
 PRODUCT_PACKAGES += \
     fstab.mt6765 \
     factory_init.connectivity.rc \
