@@ -16,6 +16,13 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay
+
+PRODUCT_PACKAGES += \
+    NotchBarKiller
+
 # Product characteristics
 PRODUCT_CHARACTERISTICS := default
 
