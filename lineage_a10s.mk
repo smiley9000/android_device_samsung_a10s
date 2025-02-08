@@ -13,6 +13,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from a10s device
 $(call inherit-product, device/samsung/a10s/device.mk)
 
+# Call proprietary lpm setup
+$(call inherit-product, vendor/samsung/lpm/lpm-a10s.mk)
+
 PRODUCT_DEVICE := a10s
 PRODUCT_NAME := lineage_a10s
 PRODUCT_BRAND := samsung

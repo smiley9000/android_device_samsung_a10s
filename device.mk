@@ -40,6 +40,10 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhwbinder
 
+# LPM
+PRODUCT_PACKAGES += \
+    libsuspend 
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
