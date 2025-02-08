@@ -118,11 +118,15 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6765
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+# Sepolicy
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR := $(DEVICE_PATH)/sepolicy/private
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2023-02-05
 
 # Treble
 BOARD_VNDK_VERSION := current
+
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
