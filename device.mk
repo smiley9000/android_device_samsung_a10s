@@ -94,5 +94,9 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay 
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/a10s/a10s-vendor.mk)
