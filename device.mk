@@ -99,4 +99,4 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlay 
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/samsung/a10s/a10s-vendor.mk)
+# $(call inherit-product, vendor/samsung/a10s/a10s-vendor.mk)
