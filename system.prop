@@ -6,20 +6,16 @@ ro.product.property_source_order=odm,vendor,product,system
 vendor.rild.libpath=mtk-ril.so
 vendor.rild.libargs=-d /dev/ttyC0
 
-
 wifi.interface=wlan0
 ro.mediatek.wlan.wsc=1
 ro.mediatek.wlan.p2p=1
 mediatek.wlan.ctia=0
-
 
 #
 wifi.tethering.interface=ap0
 #
 
 ro.opengles.version=196610
-# ro.kernel.qemu=1
-# ro.kernel.qemu.gles=0
 
 wifi.direct.interface=p2p0
 #dalvik.vm.heapgrowthlimit=256m
@@ -30,32 +26,17 @@ ro.sys.usb.mtp.whql.enable=0
 
 # Power off opt in IPO
 sys.ipo.pwrdncap=2
-
 ro.sys.usb.storage.type=mtp
 
 # USB BICR function
 ro.sys.usb.bicr=no
-
-# USB Charge only function
-ro.sys.usb.charging.only=yes
 
 # audio
 ro.camera.sound.forced=0
 ro.audio.silent=0
 
 ro.zygote.preload.enable=0
-
-# temporary enables NAV bar (soft keys)
-qemu.hw.mainkeys=0
-
 ro.kernel.zio=38,108,105,16
-#ro.kernel.qemu=1
-#ro.kernel.qemu.gles=0
-#ro.boot.selinux=disable
-
-# Disable dirty region for Mali
-#debug.hwui.render_dirty_regions=false
-
 
 # performance
 ro.mtk_perf_simple_start_win=1
@@ -86,8 +67,6 @@ debug.sf.enable_hwc_vds=0
 
 #
 # from device/wingtechsh/S96116RA1/system.prop
-#
-#
 # system.prop for generic sdk
 #
 
@@ -116,16 +95,10 @@ wifi.tethering.interface=ap0
 #
 
 ro.opengles.version=196610
-#ro.kernel.qemu=1
-#ro.kernel.qemu.gles=0
-
 wifi.direct.interface=p2p0
-#dalvik.vm.heapgrowthlimit=256m
-#dalvik.vm.heapsize=512m
 
 # USB MTP WHQL
 ro.sys.usb.mtp.whql.enable=0
-
 
 ro.sys.usb.storage.type=mtp
 
@@ -145,13 +118,6 @@ ro.zygote.preload.enable=0
 qemu.hw.mainkeys=0
 
 ro.kernel.zio=38,108,105,16
-#ro.kernel.qemu=1
-#ro.kernel.qemu.gles=0
-#ro.boot.selinux=disable
-
-# Disable dirty region for Mali
-#debug.hwui.render_dirty_regions=false
-
 ro.sf.lcd_density=480
 
 # performance
@@ -159,8 +125,5 @@ ro.mtk_perf_simple_start_win=1
 ro.mtk_perf_fast_start_win=1
 ro.mtk_perf_response_time=1
 
-#+bug 615292 add by penghui.wt 2020/12/28
 ro.vendor.product.name=S96116AA1
-#-bug 615292 add by penghui.wt 2020/12/28
-
 # end of device/wingtechsh/S96116RA1/system.prop
