@@ -56,6 +56,18 @@ ro.iorapd.enable=false
 
 
 # Surfaceflinger
+debug.sf.disable_backpressure=1
+debug.sf.early.app.duration=20000000
+debug.sf.early.sf.duration=27600000
+debug.sf.earlyGl.app.duration=20000000
+debug.sf.earlyGl.sf.duration=27600000
+debug.sf.enable_hwc_vds=0
+debug.sf.hwc.min.duration=23000000
+debug.sf.latch_unsignaled=1
+debug.sf.late.app.duration=20000000
+debug.sf.late.sf.duration=27600000
+debug.sf.treat_170m_as_sRGB=1
+debug.sf.use_phase_offsets_as_durations=1
 debug.sf.latch_unsignaled=1
 ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true
@@ -88,7 +100,6 @@ ro.mediatek.wlan.p2p=1
 # MTK, mtk03034, 20101213 {
 mediatek.wlan.ctia=0
 # MTK, mtk03034 20101213}
-
 
 #
 wifi.tethering.interface=ap0
