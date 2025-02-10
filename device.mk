@@ -96,7 +96,9 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    TetheringConfigOverlay 
+    TetheringConfigOverlay \
+    SystemUIOverlay_JDM_A10s \
+    FrameworksResOverlay_JDM_A10s
 
 # Inherit the proprietary files
 # $(call inherit-product, vendor/samsung/a10s/a10s-vendor.mk)
