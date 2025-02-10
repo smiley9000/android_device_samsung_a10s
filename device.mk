@@ -56,7 +56,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
 PRODUCT_PACKAGES += \
-    NotchBarKiller
+    SystemUIOverlay_JDM_A10s \
+    FrameworksResOverlay_JDM_A10s
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := default
@@ -96,9 +97,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    TetheringConfigOverlay \
-    SystemUIOverlay_JDM_A10s \
-    FrameworksResOverlay_JDM_A10s
+    TetheringConfigOverlay
 
 # Inherit the proprietary files
 # $(call inherit-product, vendor/samsung/a10s/a10s-vendor.mk)
