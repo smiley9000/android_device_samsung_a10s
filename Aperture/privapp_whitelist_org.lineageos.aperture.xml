@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+<privapp-permissions package="org.lineageos.aperture">
+<permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+<permission name="android.permission.ACCESS_FINE_LOCATION"/>
+<permission name="android.permission.CAMERA"/>
+<permission name="android.permission.RECORD_AUDIO"/>
+<permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<permission name="org.lineageos.aperture.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+<feature name="android.hardware.camera.any"/>
+<feature name="android.hardware.camera.autofocus"/>
+</privapp-permissions>
+</permissions>
