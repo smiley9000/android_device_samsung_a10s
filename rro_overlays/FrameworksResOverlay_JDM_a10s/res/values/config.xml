@@ -36,7 +36,7 @@
     <bool name="config_wifi_dual_band_support">false</bool>
     <bool name="skip_restoring_network_selection">true</bool>
 	
-	<dimen name="rounded_corner_radius">20.0dip</dimen>
+    <dimen name="rounded_corner_radius">20.0dip</dimen>
 	
     <fraction name="config_autoBrightnessAdjustmentMaxGamma">300.0%</fraction>
     <fraction name="config_maximumScreenDimRatio">29.999996%</fraction>
