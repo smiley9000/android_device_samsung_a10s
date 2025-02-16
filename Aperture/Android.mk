@@ -1,0 +1,11 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := Aperture
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := Aperture.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_OVERRIDES_PACKAGES := Snap, Camera, Camera2, GoogleCameraGo, GCamGOPrebuilt
+include $(BUILD_PREBUILT)
