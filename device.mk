@@ -54,11 +54,6 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
-
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay
-
 PRODUCT_PACKAGES += \
     SystemUIOverlay_JDM_A10s \
     FrameworksResOverlay_JDM_A10s
