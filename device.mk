@@ -4,9 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DEVICE_PATH := device/samsung/a10s
+
 # API levels
-PRODUCT_SHIPPING_API_LEVEL := 29
-PRODUCT_EXTRA_VNDK_VERSIONS := 29 30
+PRODUCT_SHIPPING_API_LEVEL := 30
+PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -23,8 +25,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera App
 PRODUCT_PACKAGES += \
-    Aperture \
-    privapp_whitelist_org.lineageos.aperture.xml 
+    Aperture
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1600
@@ -36,7 +37,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/handheld_core_hardware.xml \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.ims.xml \
 	$(DEVICE_PATH)/biometrics/wosface.hardware.biometrics.face@1.0-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/etc/init/wosface.hardware.biometrics.face@1.0-service.rc \
-	$(DEVICE_PATH)/biometrics/wosface.hardware.biometrics.face@1.0-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/etc/init/wosface.hardware.biometrics.face@1.0-service.rc
 
 # Health
 PRODUCT_PACKAGES += \
